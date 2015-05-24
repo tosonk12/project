@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AIESEC</title>
+	<link rel="stylesheet" href="sass/bootstrap-variables.scss">
+	<link rel="stylesheet" href="sass/styles.scss">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <script type="text/javascript" src="js/full-width-slider.js"></script>    
+</head>
+<body>
+  <!-- Fixed navbar -->
+    <nav class="navbar-white navbar-title-color navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"><img class="logo-style" src="images/logos/IMG_1.png" alt="" height="100" width="100"></a>
+          <a href="index.html"><img src="images/logos/IMG_2.png" alt="" height="30" width="50"></a>
+          <a href="index.html"><img src="images/logos/IMG_3.png" alt="" height="40" width="40"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="mid-align" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="SEAB2015.html">SEAB2015</a></li>
+                <li><a href="Brand_For_Humanity.html">Brand For Humanity</a></li>
+                <li><a href="#">Co-Partners/Organizers</a></li>
+              </ul>
+            </li>
+            <li><a class="mid-align" href="#about">PROJECTS</a></li>
+            <li><a class="mid-align" href="#contact">EVENTS</a></li>
+            <li><a class="mid-align" href="#contact">BLOG</a></li>
+            <li><a class="mid-align" href="Contact.html">CONTACT</a></li>
+            <input type="text" class="form-search form-control" placeholder="Search for...">
+            <!-- <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+              
+            </div>    -->                     
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div id="slider1_container" class="slider_style">
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity: 0.7; position: absolute; display: block;
+                top: 100px; left: 0px; width: 100%; height: 100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+                top: 0px; left: 0px; width: 100%; height: 100%;">
+            </div>
+        </div>
+        <!-- Slides Container -->
+        <div u="slides" class="image-style" style="">
+            <div>
+                <img u="image" src="images/media.licdn.com 0501297.jpg" />
+                <!-- <div u="caption" t="NO" t3="RTT|2" r3="137.5%" du3="3000" d3="500" style="position: absolute; width: 445px; height: 300px; top: 100px; left: 600px;">
+                    <img src="images/c-phone.png" style="position: absolute; width: 445px; height: 300px; top: 0px; left: 0px;" />
+                    <img u="caption" t="CLIP|LR" du="4000" t2="NO" src="images/c-jssor-slider.png" style="position: absolute; width: 102px; height: 78px; top: 70px; left: 130px;" />
+                    <img u="caption" t="ZMF|10" t2="NO" src="images/c-text.png" style="position: absolute; width: 80px; height: 53px; top: 153px; left: 163px;" />
+                    <img u="caption" t="RTT|10" t2="NO" src="images/c-fruit.png" style="position: absolute; width: 140px; height: 90px; top: 60px; left: 220px;" />
+                    <img u="caption" t="T" du="4000" t2="NO" src="images/c-navigator.png" style="position: absolute; width: 200px; height: 155px; top: 57px; left: 121px;" />
+                </div> -->
+                <!-- <div u="caption" t="RTT|2" r="-75%" du="1600" d="2500" t2="NO" style="position: absolute; width: 470px; height: 220px; top: 120px; left: 650px;">
+                    <img src="images/c-phone-horizontal.png" style="position: absolute; width: 470px; height: 220px; top: 0px; left: 0px;" />
+                    <img u="caption" t3="MCLIP|L" du3="2000" src="images/c-slide-1.jpg" style="position: absolute; width: 379px; height: 213px; top: 4px; left: 45px;" />
+                    <img u="caption" t="MCLIP|R" du="2000" t2="NO" src="images/c-slide-3.jpg" style="position: absolute; width: 379px; height: 213px; top: 4px; left: 45px;" />
+                    <img u="caption" t="RTTL|BR" x="500%" y="500%" du="1000" d="-3000" r="-30%" t3="L" x3="70%" du3="1600" src="images/c-finger-pointing.png" style="position: absolute; width: 257px; height: 300px; top: 80px; left: 200px;" />
+                    <img src="images/c-navigator-horizontal.png" style="position: absolute; width: 379px; height: 213px; top: 4px; left: 45px;" />
+                </div> -->
+                <div class="first_image_first_text">"We believe AIESEC can play a positive role in expanding horizon of <br> young Vietnamese students, some of whom may well become the <br> future Youth of this country"
+                </div>
+                <div class="first_image_second_text">
+                        Thomas Grunzke, Former Vice President of Finance, Unilever Vietnam
+                </div>
+            </div>
+            <div>
+                <img u="image" src="images/10891469_921430221214376_1685097907346678926_n.jpg" height="600" width="1300" />
+                <div class="second_image_first_text">"Apart from my personal development, I saw myself more engage & contribute to help students in Vietnam in their English. I still remember when I interviewed my student Cuc Phuong  – at the first time, she was shy. However, after few weeks, she even talked a lot in English. In addition, Andy – another student in the class – was not confident when he spoke English but now he speak with a louder voice and his confidence"
+                </div>
+                <div class="second_image_second_text">
+                        ELFA - Indonesia, Exchange participant of Global Passport - national English-teaching project, AIESEC in Vietnam 
+                </div>
+            </div>
+            <div>
+                <img u="image" src="images/anh1-1408679023998-35-0-371-659-crop-1408679172230.jpg" />
+                <div class="first_image_first_text">"Before the internship in Thailand, I thought I knew all about what I want in life. But it all changed. I want to go back to Thailand for 1,2 more years, & inspire my Thai students to dream higher & go bigger than now"
+                </div>
+                <div class="third_image_second_text">
+                        Le Quyen - Vietnamese, exchange participant in Sawasdee, national education project, AIESEC in Thailand 
+                </div>
+            </div>
+            <div>
+                <img u="image" src="images/10384468_10153030457439487_2644868604258710133_n.jpg" />
+                <div class="fourth_image_first_text">"My internship is about doing business with social impact for the people of Kertajaya Village, and it not only got me in touch with my humane aspect but it opened various avenues for me to explore. It was a very stimulating and self-realizing journey and the world we live in"
+                </div>
+                <div class="fourth_image_second_text">
+                        Enakshi - India, exchange participant in Social Entrepreneurship Project, AIESEC in Indonesia
+                </div>
+            </div>
+        </div>
+                
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <style>
+            /* jssor slider bullet navigator skin 21 css */
+            /*
+            .jssorb21 div           (normal)
+            .jssorb21 div:hover     (normal mouseover)
+            .jssorb21 .av           (active)
+            .jssorb21 .av:hover     (active mouseover)
+            .jssorb21 .dn           (mousedown)
+            */
+            .jssorb21 {
+                position: absolute;
+            }
+            .jssorb21 div, .jssorb21 div:hover, .jssorb21 .av {
+                position: absolute;
+                /* size of bullet elment */
+                width: 19px;
+                height: 19px;
+                text-align: center;
+                line-height: 19px;
+                color: white;
+                font-size: 12px;
+                background: url(images/b21.png) no-repeat;
+                overflow: hidden;
+                cursor: pointer;
+            }
+            .jssorb21 div { background-position: -5px -5px; }
+            .jssorb21 div:hover, .jssorb21 .av:hover { background-position: -35px -5px; }
+            .jssorb21 .av { background-position: -65px -5px; }
+            .jssorb21 .dn, .jssorb21 .dn:hover { background-position: -95px -5px; }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb21" style="bottom: 26px; right: 6px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <style>
+            /* jssor slider arrow navigator skin 21 css */
+            /*
+            .jssora21l                  (normal)
+            .jssora21r                  (normal)
+            .jssora21l:hover            (normal mouseover)
+            .jssora21r:hover            (normal mouseover)
+            .jssora21l.jssora21ldn      (mousedown)
+            .jssora21r.jssora21rdn      (mousedown)
+            */
+            .jssora21l, .jssora21r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 55px;
+                height: 55px;
+                cursor: pointer;
+                background: url(images/a21.png) center center no-repeat;
+                overflow: hidden;
+            }
+            .jssora21l { background-position: -3px -33px; }
+            .jssora21r { background-position: -63px -33px; }
+            .jssora21l:hover { background-position: -123px -33px; }
+            .jssora21r:hover { background-position: -183px -33px; }
+            .jssora21l.jssora21ldn { background-position: -243px -33px; }
+            .jssora21r.jssora21rdn { background-position: -303px -33px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora21l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora21r" style="top: 123px; right: 8px;">
+        </span>
+        <!--#endregion Arrow Navigator Skin End -->
+        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+    </div>
+    <hr class="hr-color">
+    <p class="right-align">Discussion Board</p>
+    <br>
+    <p class="left-align">Copyright @ Brand For Humanity</p>
+</body>
+</html>

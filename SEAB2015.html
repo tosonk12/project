@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>AIESEC</title>
+	<link rel="stylesheet" href="sass/bootstrap-variables.scss">
+	<link rel="stylesheet" href="sass/styles.scss">
+	<link rel="stylesheet" href="stylesheets/styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="javascripts/bootstrap.min.js"></script>
+  <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>
+    <!-- it works the same with all jquery version from 1.x to 2.x -->
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- use jssor.slider.mini.js (40KB) instead for release -->
+    <!-- jssor.slider.mini.js = (jssor.js + jssor.slider.js) -->
+    <script type="text/javascript" src="js/jssor.js"></script>
+    <script type="text/javascript" src="js/jssor.slider.js"></script>    
+    <script type="text/javascript" src="js/banner-rotator-2.js"></script>    
+</head>
+<body>  
+  <!-- Fixed navbar -->
+    <nav class="navbar-white navbar-title-color navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="index.html"><img class="logo-style" src="images/logos/IMG_1.png" alt="" height="100" width="100"></a>
+          <a href="index.html"><img src="images/logos/IMG_2.png" alt="" height="30" width="50"></a>
+          <a href="index.html"><img src="images/logos/IMG_3.png" alt="" height="40" width="40"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse navbar-right">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a class="mid-align" href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">ABOUT<span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="SEAB2015.html">SEAB2015</a></li>
+                <li><a href="Brand_For_Humanity.html">Brand For Humanity</a></li>
+                <li><a href="#">Co-Partners/Organizers</a></li>
+              </ul>
+            </li>
+            <li><a class="mid-align" href="#about">PROJECTS</a></li>
+            <li><a class="mid-align" href="#contact">EVENTS</a></li>
+            <li><a class="mid-align" href="#contact">BLOG</a></li>
+            <li><a class="mid-align" href="Contact.html">CONTACT</a></li>
+            <input type="text" class="form-search form-control" placeholder="Search for...">
+            <!-- <div class="input-group">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+              </span>
+              
+            </div>    -->                     
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    <div class="title-style">
+        <p>SOUTHEST ASIA BEYOND 2015</p>    
+    </div>
+    <hr class="hr-color">    
+    <!-- Jssor Slider End -->
+    <div class="container">
+      <div id="slider2_container" style="position: relative; top: 0px; left: 250px; width: 600px;
+        height: 300px;">
+
+        <!-- Loading Screen -->
+        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
+            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
+                background-color: #000; top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+            <div style="position: absolute; display: block; background: url(images/loading.gif) no-repeat center center;
+                top: 0px; left: 0px;width: 100%;height:100%;">
+            </div>
+        </div>
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px;
+            overflow: hidden;">
+            <div>
+                <a u=image href="#"><img src="images/Nature Banner with Logos.png" height="300" width="600" /></a>
+            </div>
+            <div>
+                <a u=image href="#"><img src="images/People banner _ logos.png" /></a>
+            </div>
+            <div>
+                <a u=image href="#"><img src="images/SharingGarden Banner _ logos.png" /></a>
+            </div>
+            <!-- <div>
+                <a u=image href="#"><img src="../img/landscape/03.jpg" /></a>
+            </div>
+            <div>
+                <a u=image href="#"><img src="../img/landscape/05.jpg" /></a>
+            </div> -->
+        </div>
+        <!--#region Bullet Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-bullet-navigator-jquery.html -->
+        <style>
+            /* jssor slider bullet navigator skin 01 css */
+            /*
+            .jssorb01 div           (normal)
+            .jssorb01 div:hover     (normal mouseover)
+            .jssorb01 .av           (active)
+            .jssorb01 .av:hover     (active mouseover)
+            .jssorb01 .dn           (mousedown)
+            */
+            .jssorb01 {
+                position: absolute;
+            }
+
+                .jssorb01 div, .jssorb01 div:hover, .jssorb01 .av {
+                    position: absolute;
+                    /* size of bullet elment */
+                    width: 12px;
+                    height: 12px;
+                    filter: alpha(opacity=70);
+                    opacity: .7;
+                    overflow: hidden;
+                    cursor: pointer;
+                    border: #000 1px solid;
+                }
+
+                .jssorb01 div {
+                    background-color: gray;
+                }
+
+                    .jssorb01 div:hover, .jssorb01 .av:hover {
+                        background-color: #d3d3d3;
+                    }
+
+                .jssorb01 .av {
+                    background-color: #fff;
+                }
+
+                .jssorb01 .dn, .jssorb01 .dn:hover {
+                    background-color: #555555;
+                }
+        </style>
+        <!-- bullet navigator container -->
+        <div u="navigator" class="jssorb01" style="bottom: 16px; right: 10px;">
+            <!-- bullet navigator item prototype -->
+            <div u="prototype"></div>
+        </div>
+        <!--#endregion Bullet Navigator Skin End -->
+        
+        <!--#region Arrow Navigator Skin Begin -->
+        <!-- Help: http://www.jssor.com/development/slider-with-arrow-navigator-jquery.html -->
+        <style>
+            /* jssor slider arrow navigator skin 05 css */
+            /*
+            .jssora05l                  (normal)
+            .jssora05r                  (normal)
+            .jssora05l:hover            (normal mouseover)
+            .jssora05r:hover            (normal mouseover)
+            .jssora05l.jssora05ldn      (mousedown)
+            .jssora05r.jssora05rdn      (mousedown)
+            */
+            .jssora05l, .jssora05r {
+                display: block;
+                position: absolute;
+                /* size of arrow element */
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                background: url(images/a17.png) no-repeat;
+                overflow: hidden;
+            }
+            .jssora05l { background-position: -10px -40px; }
+            .jssora05r { background-position: -70px -40px; }
+            .jssora05l:hover { background-position: -130px -40px; }
+            .jssora05r:hover { background-position: -190px -40px; }
+            .jssora05l.jssora05ldn { background-position: -250px -40px; }
+            .jssora05r.jssora05rdn { background-position: -310px -40px; }
+        </style>
+        <!-- Arrow Left -->
+        <span u="arrowleft" class="jssora05l" style="top: 123px; left: 8px;">
+        </span>
+        <!-- Arrow Right -->
+        <span u="arrowright" class="jssora05r" style="top: 123px; right: 8px;">
+        </span>
+        <a style="display: none" href="http://www.jssor.com">Bootstrap Slider</a>
+    </div>
+    <!-- <p class="intro-style">Introduction</p> -->
+    <br>
+    <p class="content-color">"Southeast Asia Beyond 2015 And The World We Want" is a youth engagement and development programme created in support of the World We Want 2015 campaign for Southeast Asia and the ASEAN region. Its prime objectives are to "equip, empower & enable" urban, rural and indigenous youths to realise the transformative results of the Sustainable Development Goals and the shared objectives of ASEAN for a more inclusive sustainable and sociality integrated ASEAN.</p>
+    <p class="content-color">The program is initiated by Brand4Humanity & co-organized with partners whose projects are supporting youth to develop social awareness & promote mutual understanding in ASEAN</p>    
+    <a href="index.html"><p class="content-color">< Back to homepage</p></a>
+    </div>
+
+    
+    <hr class="hr-color">
+    <p class="right-align">Discussion Board</p>
+    <br>
+    <p class="left-align">Copyright @ Brand For Humanity</p>
+</body>
+</html>
